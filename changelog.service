@@ -1,0 +1,11 @@
+[Unit]
+Description="Change logs."
+
+[Service]
+User=root
+WorkingDirectory=/var/
+ExecStart=/var/changelog.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

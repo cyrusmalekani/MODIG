@@ -1,0 +1,12 @@
+[Unit]
+Description="Log rotator"
+
+[Service]
+User=root
+WorkingDirectory=/var/
+ExecStart=/var/backlog.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
